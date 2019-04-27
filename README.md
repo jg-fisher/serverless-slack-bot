@@ -13,25 +13,25 @@ aws configure —profile <profilename>
     * JSON
 
 ## Configure Dependencies
-pip install pipenv
-pipenv shell
-pipenv install chalice
-pipenv install requests
+* pip install pipenv
+* pipenv shell
+* pipenv install chalice
+* pipenv install requests
 
 ## Create Chalice App
-chalice new-project slack-bot-serverless
-cd slack-bot-serverless
+* chalice new-project slack-bot-serverless
+* cd slack-bot-serverless
 
 (Write your code)
 
-## Send pipenv dependencies to requirements.txt for Chalice deployment package
+## Chalice Packaging Dependencies
 pipenv lock -r > requirements.txt
 
 ## Local Testing
-install ngrok
-./ngrok http 8000
-chalice local
+* install ngrok
+* ./ngrok http 8000
+* chalice local
 
 ## Deploy to AWS
-export AWS_DEFAULT_REGION=<aws-region-id>
-chalice deploy —profile <profilename>
+* export AWS_DEFAULT_REGION=<aws-region-id>
+* chalice deploy —profile <profilename>
