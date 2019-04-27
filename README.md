@@ -1,7 +1,18 @@
 # serverless-slack-bot
 
+## Create A Slack Bot
+* Sign up for Slack
+* Create a Slack Workspace
+* Create Slack App: https://api.slack.com/apps
+* Create Bot User (Features > Bot Users)
+* Install App to Workspace (Feautures > OAuth & Permissions)
+* Enable Event Subscriptions (Features > Event Subscriptions)
+* Add Bot User Event (Features > Event Subscriptions .. Subscribe to Bot Events .. Add Bot User Event .. app_mention)
+* Post Request Url and Challenge
+* Invite the Bot User to a channel (Bot user should appear in channel users after "Install App To Workspace")
+
 ## Configure AWS CLI
-install aws cli
+Install aws cli
 
 aws configure —profile profilename
 * Access key
@@ -26,7 +37,8 @@ aws configure —profile profilename
 (Write your code)
 
 ## Chalice Packaging Dependencies
-pipenv lock -r > requirements.txt
+* Add Bot User OAuth Access Token from Slack (Features > OAuth & Permissions to .chalice/config, create a "environment_variables key with an object for environment variable key value pairs)
+* pipenv lock -r > requirements.txt
 
 ## Local Testing
 * install ngrok
