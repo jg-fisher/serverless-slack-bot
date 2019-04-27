@@ -8,7 +8,7 @@
 * Install App to Workspace (Feautures > OAuth & Permissions)
 * Enable Event Subscriptions (Features > Event Subscriptions)
 * Add Bot User Event (Features > Event Subscriptions .. Subscribe to Bot Events .. Add Bot User Event .. app_mention)
-* Post Request Url and Challenge
+* Post Request Url and Challenge (this will be the ngrok https url if testing local, otherwise the public DNS of Chalice AWS API Gateway after running "chalice deploy --profile profilename" below)
 * Invite the Bot User to a channel (Bot user should appear in channel users after "Install App To Workspace")
 
 ## Configure AWS CLI
