@@ -2,7 +2,8 @@
 
 ## Configure AWS CLI
 install aws cli
-aws configure —profile <profilename>
+
+aws configure —profile profilename
 * Access key
     * Generate from AWS
 * Access secret
@@ -33,5 +34,5 @@ pipenv lock -r > requirements.txt
 * chalice local
 
 ## Deploy to AWS
-* export AWS_DEFAULT_REGION=<aws-region-id>
-* chalice deploy —profile <profilename>
+* export AWS_DEFAULT_REGION=aws-region-id
+* chalice deploy —profile profilename
